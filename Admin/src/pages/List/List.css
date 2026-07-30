@@ -1,0 +1,62 @@
+/* List.css - Add these styles */
+
+.list {
+  padding: 20px;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-table-format.title {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  border-bottom: 2px solid tomato;
+}
+
+/* ✅ FIX for image size - force all images to same size */
+.list-table-format img {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: cover !important;
+  border-radius: 8px;
+  border: 2px solid #eee;
+  display: block;
+}
+
+/* Alternative: Use a specific class for images */
+.list-food-image {
+  width: 60px !important;
+  height: 60px !important;
+  object-fit: cover !important;
+  border-radius: 8px;
+  border: 2px solid #eee;
+  display: block;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .list-table-format {
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr;
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .list-table-format img {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
+.cursor {
+  cursor: pointer;
+}
